@@ -17,16 +17,14 @@ body {
 }
 /* -------------
   INITIALIZATION
-  --------------
-*/
+  -------------- */
 .container {
   margin: 0 auto;
   width: 50%;
 }
 /* -------------
   INTRO
-  --------------
-*/
+  -------------- */
 .introduction {
   padding: 5vh 0;
 }
@@ -36,8 +34,7 @@ body {
 }
 /* -------------
   PROJECTS
-  --------------
-*/
+  -------------- */
 .projects-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -49,8 +46,7 @@ body {
 }
 .projects-box {
   padding: 8px;
-  /* height: 255px;
-  background-color: var(--secondary); */
+  height: 100%;
   border-radius: 5px;
 }
 .projects-img {
@@ -62,6 +58,7 @@ body {
   opacity: 50%;
 }
 .projects-link {
+  height: 100%;
   text-decoration: none;
   color: var(--text);
 }
@@ -90,14 +87,18 @@ body {
   align-items: center;
   line-height: 44px;
 }
+.see-more-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .see-more {
   color: var(--text-2);
   font-size: 3rem;
 }
 /* -------------
   RESPONSIVENESS
-  --------------
-*/
+  -------------- */
 @media screen and (max-width: 1440px) {
   .container {
     width: 70%;
@@ -122,5 +123,11 @@ body {
   }
   .projects-main-2 {
     height: 310px;
+  }
+  .see-more-con {
+    line-height: 58px;
+  }
+  .see-more {
+    font-size: 5rem;
   }
 }
