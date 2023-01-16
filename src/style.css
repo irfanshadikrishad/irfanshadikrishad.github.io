@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;700&display=swap");
+:root {
+  --text: #252525;
+  --bg: whitesmoke;
+  --primary: rgb(126, 13, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+.introduction {
+  padding: 5vh 0;
+}
+.title,
+.hl {
+  color: var(--primary);
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 80%;
+  }
+}
