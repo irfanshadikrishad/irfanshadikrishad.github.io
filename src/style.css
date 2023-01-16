@@ -122,12 +122,12 @@ body {
     grid-template-columns: 1fr;
   }
   .projects-main-2 {
-    height: 310px;
+    background-color: transparent;
   }
   .see-more-con {
-    line-height: 58px;
+    line-height: normal;
   }
   .see-more {
-    font-size: 5rem;
+    font-size: 15px;
   }
 }
