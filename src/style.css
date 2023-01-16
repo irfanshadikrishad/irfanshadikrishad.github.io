@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;700&display=swap");
 :root {
   --text: #252525;
+  --text-2: #25252580;
   --bg: whitesmoke;
   --primary: rgb(126, 13, 255);
+  --secondary: rgb(237 237 237);
 }
 * {
   margin: 0;
@@ -13,10 +15,18 @@ body {
   color: var(--text);
   background-color: var(--bg);
 }
+/* -------------
+  INITIALIZATION
+  --------------
+*/
 .container {
   margin: 0 auto;
   width: 50%;
 }
+/* -------------
+  INTRO
+  --------------
+*/
 .introduction {
   padding: 5vh 0;
 }
@@ -24,13 +34,93 @@ body {
 .hl {
   color: var(--primary);
 }
-@media screen and (max-width: 1024px) {
+/* -------------
+  PROJECTS
+  --------------
+*/
+.projects-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 2vh 0;
+}
+.projects-main-2 {
+  background-color: var(--secondary);
+}
+.projects-box {
+  padding: 8px;
+  /* height: 255px;
+  background-color: var(--secondary); */
+  border-radius: 5px;
+}
+.projects-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.projects-desc {
+  font-size: 15px;
+  opacity: 50%;
+}
+.projects-link {
+  text-decoration: none;
+  color: var(--text);
+}
+.collab-title,
+.projects-title {
+  color: var(--primary);
+}
+.collab-main {
+  display: flex;
+}
+.collab {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--text-2);
+}
+.collab-img {
+  width: 100%;
+  border-radius: 50%;
+}
+.collab-2 {
+  transform: translateX(-14px);
+}
+.see-more-con {
+  display: flex;
+  align-items: center;
+  line-height: 44px;
+}
+.see-more {
+  color: var(--text-2);
+  font-size: 3rem;
+}
+/* -------------
+  RESPONSIVENESS
+  --------------
+*/
+@media screen and (max-width: 1440px) {
   .container {
     width: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .projects-main {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 480px) {
   .container {
     width: 80%;
+  }
+  .projects-main {
+    grid-template-columns: 1fr;
+  }
+  .projects-main-2 {
+    height: 310px;
   }
 }
