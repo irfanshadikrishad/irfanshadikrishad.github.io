@@ -176,6 +176,10 @@ textarea:valid ~ span {
   .container {
     width: 70%;
   }
+  .con-in input,
+  textarea {
+    width: 30vw;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -202,5 +206,15 @@ textarea:valid ~ span {
   }
   .see-more {
     font-size: 15px;
+  }
+  .contact--main {
+    flex-direction: column;
+  }
+  .con-in input,
+  textarea {
+    width: 80vw;
+  }
+  .follow {
+    text-align: start;
   }
 }
