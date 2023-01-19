@@ -22,6 +22,12 @@ body {
   margin: 0 auto;
   width: 50%;
 }
+.section-container {
+  padding-bottom: 2vh;
+}
+.title-2 {
+  font-size: 25px;
+}
 /* -------------
   INTRO
   -------------- */
@@ -29,7 +35,8 @@ body {
   padding: 5vh 0;
 }
 .title,
-.hl {
+.hl,
+.title-2 {
   color: var(--primary);
 }
 /* -------------
@@ -95,6 +102,72 @@ body {
 .see-more {
   color: var(--text-2);
   font-size: 3rem;
+}
+/* -------------
+  CONTACT
+  -------------- */
+.contact-main {
+  padding: 1vh 0;
+}
+.con-in {
+  position: relative;
+  padding-top: 15px;
+}
+.con-in input,
+textarea {
+  width: 20vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  outline: none;
+  font-size: 15px;
+  overflow: hidden;
+}
+textarea {
+  height: 100px;
+}
+.con-in input {
+  height: 25px;
+}
+.con-in span {
+  position: absolute;
+  left: 0;
+  color: var(--text);
+  opacity: 90%;
+}
+.con-in input:focus ~ span,
+.con-in input:valid ~ span,
+textarea:focus ~ span,
+textarea:valid ~ span {
+  color: var(--primary);
+  transform: translateY(-15px);
+  font-size: 13px;
+}
+.submit {
+  font-size: 15px;
+  padding: 5px 45px;
+  margin-top: 5px;
+  color: var(--bg);
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+}
+.contact--main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.follow-icons {
+  display: flex;
+  font-size: 25px;
+  gap: 8px;
+}
+.follow {
+  text-align: end;
+}
+.follow-icon > a {
+  color: var(--text);
 }
 /* -------------
   RESPONSIVENESS

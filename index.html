@@ -9,10 +9,18 @@
     <title>Irfan Shadik Rishad | Portfolio</title>
     <!-- CSS Linking -->
     <link rel="stylesheet" href="./src/style.css" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Intro -->
-    <div class="introduction container">
+    <section class="introduction container">
       <h1 class="title">.intro()</h1>
       <p>
         🌹 Bonjour, I am <span class="hl">Irfan Shadik Rishad</span> and I am a
@@ -24,9 +32,9 @@
         <span class="hl">super power</span>? I am invisible until someone needs
         me. Thanks for visiting my website. 💖
       </p>
-    </div>
+    </section>
     <!-- Projects -->
-    <div class="projects container">
+    <section class="section-container container">
       <h1 class="title">.projects()</h1>
       <div class="projects-main">
         <!-- project-1 -->
@@ -115,7 +123,75 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="section-container container">
+      <h1 class="title">.contact()</h1>
+      <div class="contact--main">
+        <div class="contact-main">
+          <form action="">
+            <div class="con-in">
+              <input type="text" required="required" />
+              <span>Name</span>
+            </div>
+            <div class="con-in">
+              <input type="text" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="con-in">
+              <input type="text" required="required" />
+              <span>Subject</span>
+            </div>
+            <div class="con-in">
+              <textarea name="" required="required"></textarea>
+              <span>Message</span>
+            </div>
+            <button class="submit">
+              Submit <i class="fa-regular fa-circle-check"></i>
+            </button>
+          </form>
+        </div>
+        <div class="follow">
+          <h1 class="title-2">Follow Me</h1>
+          <div class="follow-icons">
+            <div class="follow-icon">
+              <a
+                href="https://www.facebook.com/irfanshadikrishad/"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </div>
+            <div class="follow-icon">
+              <a
+                href="https://www.instagram.com/irfanshadikrishad/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div class="follow-icon">
+              <a href="https://twitter.com/irfanshadikoffi" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <div class="follow-icon">
+              <a
+                href="https://www.linkedin.com/in/irfanshadikrishad/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="follow-icon">
+              <a href="https://github.com/irfanshadikrishad" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="stats">
+            <h1 class="title-2">Stats</h1>
+            <p class="views">Views: <span id="views">???</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 <!-- [ง •̀_•́]ง   | (‿|‿) |   •`_´• -->
