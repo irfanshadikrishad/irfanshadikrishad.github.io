@@ -3,7 +3,7 @@
   --text: #252525;
   --text-2: #25252580;
   --bg: whitesmoke;
-  --primary: rgb(126, 13, 255);
+  --primary: #3db4f2;
   --secondary: rgb(237 237 237);
 }
 * {
@@ -210,11 +210,11 @@ textarea:valid ~ span {
   cursor: pointer;
 }
 .t-dark {
-  color: whitesmoke;
+  color: #3db4f2;
   background-color: #252525;
 }
 .t-light {
-  color: #252525;
+  color: #3db4f2;
   background-color: whitesmoke;
 }
 .t-dark-blue {
@@ -272,6 +272,12 @@ textarea:valid ~ span {
   }
   .follow {
     text-align: start;
+  }
+  .theme {
+    align-items: flex-start;
+  }
+  .section-container {
+    padding-bottom: 4vh;
   }
 }
 
