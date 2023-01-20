@@ -15,6 +15,18 @@ body {
   color: var(--text);
   background-color: var(--bg);
 }
+.dark-mode {
+  --bg: #252525;
+  --text: whitesmoke;
+  --text-2: #6a6a6a80;
+  --secondary: rgb(46 46 46);
+}
+.light-mode {
+  --text: #252525;
+  --text-2: #25252580;
+  --bg: whitesmoke;
+  --secondary: rgb(237 237 237);
+}
 /* -------------
   INITIALIZATION
   -------------- */
@@ -116,6 +128,7 @@ body {
 .con-in input,
 textarea {
   width: 20vw;
+  color: var(--text);
   background-color: transparent;
   border: none;
   border-bottom: 3px solid var(--primary);
@@ -168,6 +181,35 @@ textarea:valid ~ span {
 }
 .follow-icon > a {
   color: var(--text);
+}
+.theme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.theme-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: start;
+  border: 2px solid #ffffff80;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.t-dark {
+  color: whitesmoke;
+  background-color: #252525;
+}
+.t-light {
+  color: #252525;
+  background-color: whitesmoke;
+}
+.theme-main {
+  display: flex;
+  gap: 5px;
 }
 /* -------------
   RESPONSIVENESS
