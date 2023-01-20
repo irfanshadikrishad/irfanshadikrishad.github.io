@@ -27,6 +27,13 @@ body {
   --bg: whitesmoke;
   --secondary: rgb(237 237 237);
 }
+.dark-blue {
+  --text: whitesmoke;
+  --text-2: #8d8d8d1c;
+  --bg: #0b1622;
+  --primary: #3db4f2;
+  --secondary: #151f2e;
+}
 /* -------------
   INITIALIZATION
   -------------- */
@@ -182,6 +189,9 @@ textarea:valid ~ span {
 .follow-icon > a {
   color: var(--text);
 }
+#views {
+  color: var(--primary);
+}
 .theme {
   display: flex;
   flex-direction: column;
@@ -206,6 +216,10 @@ textarea:valid ~ span {
 .t-light {
   color: #252525;
   background-color: whitesmoke;
+}
+.t-dark-blue {
+  color: #3db4f2;
+  background-color: #0b1622;
 }
 .theme-main {
   display: flex;
