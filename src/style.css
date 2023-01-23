@@ -15,25 +15,6 @@ body {
   color: var(--text);
   background-color: var(--bg);
 }
-.dark-mode {
-  --bg: #252525;
-  --text: whitesmoke;
-  --text-2: #6a6a6a80;
-  --secondary: rgb(46 46 46);
-}
-.light-mode {
-  --text: #252525;
-  --text-2: #25252580;
-  --bg: whitesmoke;
-  --secondary: rgb(237 237 237);
-}
-.dark-blue {
-  --text: whitesmoke;
-  --text-2: #8d8d8d1c;
-  --bg: #0b1622;
-  --primary: #3db4f2;
-  --secondary: #151f2e;
-}
 /* -------------
   INITIALIZATION
   -------------- */
@@ -258,39 +239,6 @@ textarea:valid ~ span {
 }
 #views {
   color: var(--primary);
-}
-.theme {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.theme-box {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 3px;
-  width: 30px;
-  height: 30px;
-  text-align: start;
-  border: 2px solid #ffffff80;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.t-dark {
-  color: #3db4f2;
-  background-color: #252525;
-}
-.t-light {
-  color: #3db4f2;
-  background-color: whitesmoke;
-}
-.t-dark-blue {
-  color: #3db4f2;
-  background-color: #0b1622;
-}
-.theme-main {
-  display: flex;
-  gap: 5px;
 }
 /* -------------
   RESPONSIVENESS

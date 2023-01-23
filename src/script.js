@@ -67,13 +67,3 @@ window.addEventListener("load", () => {
   document.getElementById("pre-loader").style.display = "none";
   document.getElementById("post-loader").style.display = "inline-block";
 });
-
-// localStorage Sharing
-window.addEventListener("load", function () {
-  const iframe = this.document.querySelector("iframe");
-  const wind = iframe.contentWindow;
-  const data = {
-    name: this.localStorage.getItem("irfanshadikrishad.github.io_theme"),
-  };
-  wind.postMessage(JSON.stringify(data), "*");
-});
