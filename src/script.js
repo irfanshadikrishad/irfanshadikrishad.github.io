@@ -6,7 +6,7 @@ function dark() {
   document.body.classList.remove("light-mode");
 
   //SET DATA TO LOCAL STORAGE
-  let key = "theme-irfanshadik.github.io";
+  let key = "irfanshadikrishad.github.io_theme";
   let data;
   if (document.body.classList.contains("dark-mode")) {
     data = "darkk";
@@ -22,7 +22,7 @@ function light() {
   document.body.classList.add("light-mode");
 
   //SET DATA TO LOCAL STORAGE
-  let key = "theme-irfanshadik.github.io";
+  let key = "irfanshadikrishad.github.io_theme";
   let data;
   if (document.body.classList.contains("light-mode")) {
     data = "light";
@@ -39,7 +39,7 @@ function dark_blue() {
   document.body.classList.add("dark-blue");
 
   //SET DATA TO LOCAL STORAGE
-  let key = "theme-irfanshadik.github.io";
+  let key = "irfanshadikrishad.github.io_theme";
   let data;
   if (document.body.classList.contains("dark-blue")) {
     data = "dark-blue";
@@ -50,12 +50,20 @@ function dark_blue() {
 }
 
 // Retrive data from localStorage
-if (localStorage.getItem("theme-irfanshadik.github.io") === "darkk") {
+if (localStorage.getItem("irfanshadikrishad.github.io_theme") === "darkk") {
   document.body.classList.add("dark-mode");
-} else if (localStorage.getItem("theme-irfanshadik.github.io") === "lightt") {
+} else if (
+  localStorage.getItem("irfanshadikrishad.github.io_theme") === "lightt"
+) {
   document.body.classList.add("light-mode");
 } else if (
-  localStorage.getItem("theme-irfanshadik.github.io") === "dark-blue"
+  localStorage.getItem("irfanshadikrishad.github.io_theme") === "dark-blue"
 ) {
   document.body.classList.add("dark-blue");
 }
+
+// Preloader
+window.addEventListener("load", () => {
+  document.getElementById("pre-loader").style.display = "none";
+  document.getElementById("post-loader").style.display = "inline-block";
+});

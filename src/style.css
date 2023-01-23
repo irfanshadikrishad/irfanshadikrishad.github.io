@@ -47,6 +47,72 @@ body {
 .title-2 {
   font-size: 25px;
 }
+/* pre-loader */
+#pre-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#post-loader {
+  display: none;
+}
+.spinner {
+  width: 44.8px;
+  height: 44.8px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(71, 75, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2.2px solid var(--primary);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22.4px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22.4px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
 /* -------------
   INTRO
   -------------- */
@@ -69,6 +135,7 @@ body {
 }
 .projects-main-2 {
   background-color: var(--secondary);
+  border-radius: 5px;
 }
 .projects-box {
   padding: 8px;
@@ -251,17 +318,11 @@ textarea:valid ~ span {
   .container {
     width: 80%;
   }
-  .projects-main {
-    grid-template-columns: 1fr;
-  }
-  .projects-main-2 {
-    background-color: transparent;
-  }
   .see-more-con {
     line-height: normal;
   }
   .see-more {
-    font-size: 15px;
+    font-size: 45px;
   }
   .contact--main {
     flex-direction: column;
@@ -278,6 +339,15 @@ textarea:valid ~ span {
   }
   .section-container {
     padding-bottom: 4vh;
+  }
+}
+@media screen and (max-width: 350px) {
+  .projects-main {
+    grid-template-columns: 1fr;
+  }
+  .see-more {
+    color: var(--primary);
+    font-size: 15px;
   }
 }
 
