@@ -15,6 +15,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
 }
+
 /* -------------
   INITIALIZATION
   -------------- */
@@ -28,7 +29,30 @@ body {
 .title-2 {
   font-size: 25px;
 }
-/* pre-loader */
+.skills-main,
+.projects-main {
+  padding: 2vh 0;
+}
+
+/* -------------
+  SCROLLBAR
+  -------------- */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+}
+
+/* -------------
+  PRELOADER-POSTLOADER
+  -------------- */
 #pre-loader {
   display: flex;
   align-items: center;
@@ -106,13 +130,33 @@ body {
   color: var(--primary);
 }
 /* -------------
+  SKILLS
+  -------------- */
+.skill-text {
+  color: var(--bg);
+  padding-left: 25px;
+}
+.skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.skill-fg {
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+.skill-bg {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* -------------
   PROJECTS
   -------------- */
 .projects-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  padding: 2vh 0;
 }
 .projects-main-2 {
   background-color: var(--secondary);
