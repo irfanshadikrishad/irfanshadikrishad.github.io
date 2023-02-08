@@ -80,4 +80,4 @@ function UpdateViews() {
     });
 }
 
-UpdateViews();
+window.addEventListener("load", UpdateViews());
