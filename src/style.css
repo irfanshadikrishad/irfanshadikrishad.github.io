@@ -129,17 +129,17 @@ body {
 .title-2 {
   color: var(--primary);
 }
-.cv {
-  padding: 3px 20px;
-  margin-top: 10px;
-  background-color: transparent;
-  border: 3px solid var(--primary);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.cv > a {
+.intro-link {
   text-decoration: none;
   color: var(--text);
+}
+.cv {
+  padding: 4px 20px;
+  margin-top: 8px;
+  background-color: var(--bg);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
 }
 /* -------------
   SKILLS
