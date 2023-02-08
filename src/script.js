@@ -71,7 +71,7 @@ window.addEventListener("load", () => {
 // Website Views
 function UpdateViews() {
   fetch(
-    "https://api.countapi.xyz/update/irfanshadikrishad.github.io/visits/?amount=-1"
+    "https://api.countapi.xyz/update/irfanshadikrishad.github.io/visits/?amount=1"
   )
     .then((res) => res.json())
     .then((data) => {
